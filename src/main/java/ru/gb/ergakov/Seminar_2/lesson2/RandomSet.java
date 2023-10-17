@@ -13,9 +13,11 @@ public class RandomSet {
     }
 
     public boolean contains(int val) {
+        return true;
     }
 
     public int getRandom() {
+        return 1;
     }
 
     public void remove(int val) {
