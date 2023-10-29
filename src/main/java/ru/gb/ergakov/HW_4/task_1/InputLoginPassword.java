@@ -17,12 +17,12 @@ public class InputLoginPassword {
             }
             System.out.print("Введите пароль: ");
             String password = in.next();
-            System.out.print("Повторите пароль для подтверждения : ");
+            System.out.print("Повторите пароль для подтверждения: ");
             String confirmPassword = in.next();
             if (password.length() > 20 || !password.equals(confirmPassword)){
                 throw new WrongPasswordException(password);
             }
-            System.out.printf("Логин: %-20.20s, Пароль: %-20.20s, Повторный пароль: %-20.20s", login, password, confirmPassword);
+            System.out.printf("Логин: %-20.20s Пароль: %-20.20s Повторный пароль: %-20.20s\n", login, password, confirmPassword);
             return true;
         } catch (Exception e) {
             System.out.println(e.getMessage());
