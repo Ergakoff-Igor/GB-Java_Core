@@ -1,6 +1,6 @@
 package ru.gb.ergakov.Seminar_5;
 
-import lesson3.Person;
+import ru.gb.ergakov.Seminar_3.Person;
 
 import java.util.Optional;
 

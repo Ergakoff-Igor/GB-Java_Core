@@ -1,7 +1,7 @@
 package ru.gb.ergakov.Seminar_5;
 
 import com.sun.source.tree.UsesTree;
-import lesson3.Person;
+import ru.gb.ergakov.Seminar_3.Person;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 
 public class StreamsTest {
     public static void main(String[] args) {
-        testStringsCollection();
+//        testStringsCollection();
         testIntegerCollection();
     }
 
@@ -53,8 +53,8 @@ public class StreamsTest {
      * Отсортировать строки в алфавитном порядке.
      * Добавить к каждой строке "!".
      */
-    public static void testStringsCollection() {
-        List<String> strings = Arrays.asList("Java", "Java", "Python", "JavaScript", "C++", "Java", "JavaFX");
+ /*   public static void testStringsCollection() {
+       List<String> strings = Arrays.asList("Java", "Java", "Python", "JavaScript", "C++", "Java", "JavaFX");
 
         var result = strings.stream()
                 .filter(s -> s.startsWith("J"))
@@ -78,7 +78,8 @@ public class StreamsTest {
                     person.setSalary(new Random().nextInt(33000));
                     return person;
                 })*/
-//                .collect(Collectors.toList());
+        /*
+               .collect(Collectors.toList());
                 .toList();
 
         var maxSalary = result.stream()
@@ -90,5 +91,5 @@ public class StreamsTest {
     }
 
 
-
+*/
 }

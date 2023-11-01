@@ -1,6 +1,6 @@
 package ru.gb.ergakov.Seminar_5;
 
-import lesson3.Person;
+import ru.gb.ergakov.Seminar_3.Person;
 
 import java.sql.SQLOutput;
 import java.util.Optional;
@@ -20,13 +20,13 @@ public class Main {
         Person person = personRepository.findById("id1").orElse(defaultPerson);
 //        System.out.println(person);
 
-        Person person1 = personRepository.findById("id1")
-                .orElseGet(() -> Person.builder()
-                        .name("Default")
-                        .salary(100000)
-                        .age(12)
-                        .build());
-        System.out.println(person1);
+//        Person person1 = personRepository.findById("id1")
+//                .orElseGet(() -> Person.builder()
+//                        .name("Default")
+//                        .salary(100000)
+//                        .age(12)
+//                        .build());
+//        System.out.println(person1);
 
         String id = "id";
         String name = personRepository.findById(id)
