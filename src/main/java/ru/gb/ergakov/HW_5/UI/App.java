@@ -22,6 +22,7 @@ public class App {
         students.add(new Student("Семён", new ArrayList<>(Arrays.asList(5.0, 5.0, 5.0, 4.0, 5.0)), "Информатика"));
         students.add(new Student("Константин", new ArrayList<>(Arrays.asList(5.0, 5.0, 5.0, 4.0, 5.0)), "Информатика"));
 
-        FilterStudents.filterInformatics(students);
+        FilterStudents.filterInformatics(students)
+                .forEach(System.out::println);
     }
 }
